@@ -13,6 +13,7 @@ theme_asset_install () {
 
 	theme_asset_install_gruvbox_gtk
 	theme_asset_install_gruvbox_icon
+	theme_asset_install_rgaps_xfwm4
 
 
 	echo
@@ -70,7 +71,7 @@ theme_asset_install_gruvbox_gtk_install () {
 
 	if ! [ -a "./tmp/Theme_Gruvbox_Source/archcraft-gtk-theme-gruvbox/files/Gruvbox" ]; then
 		echo
-		echo "## Theme Gruvbox Not Exists:" "./tmp/Theme_Gruvbox_Source/archcraft-gtk-theme-gruvbox/files/Gruvbox"
+		echo "## Theme Source / Gruvbox Not Exists:" "./tmp/Theme_Gruvbox_Source/archcraft-gtk-theme-gruvbox/files/Gruvbox"
 		echo
 		return 0
 	fi
@@ -136,7 +137,7 @@ theme_asset_install_gruvbox_icon_install () {
 
 	if ! [ -a "./tmp/Icons_Gruvbox_Source" ]; then
 		echo
-		echo "## Icons Gruvbox Not Exists:" "./tmp/Icons_Gruvbox_Source"
+		echo "## Icons Source / Gruvbox Not Exists:" "./tmp/Icons_Gruvbox_Source"
 		echo
 		return 0
 	fi
@@ -156,6 +157,72 @@ theme_asset_install_gruvbox_icon_install () {
 
 ##
 ### Tail: Theme / Gruvbox / Icon
+################################################################################
+
+
+################################################################################
+### Head: Theme / Rgaps / Xfwm4
+##
+theme_asset_install_rgaps_xfwm4 () {
+
+	echo
+
+	if [ -a "$HOME/.themes/RGapsBlackNoButtons" ]; then
+		echo
+		echo "## Theme Exists:" "$HOME/.themes/RGapsBlackNoButtons"
+		echo
+		return 0
+	fi
+
+
+	theme_asset_install_rgaps_xfwm4_download
+
+	theme_asset_install_rgaps_xfwm4_install
+}
+
+theme_asset_install_rgaps_xfwm4_download () {
+
+	if [ -a "./tmp/Theme_Rgaps_Source" ]; then
+		echo
+		echo "## Theme Source Exists:" "./tmp/Theme_Rgaps_Source"
+		echo
+		return 0
+	fi
+
+	echo
+	echo "mkdir -p ./tmp"
+	mkdir -p ./tmp
+
+
+	##
+	## * https://github.com/samwhelp/theme-collections-xfwm4
+	##
+	echo "git clone https://github.com/samwhelp/theme-collections-xfwm4.git ./tmp/Theme_Rgaps_Source"
+	git clone https://github.com/samwhelp/theme-collections-xfwm4.git ./tmp/Theme_Rgaps_Source
+
+}
+
+theme_asset_install_rgaps_xfwm4_install () {
+
+	if ! [ -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons" ]; then
+		echo
+		echo "## Theme Source / RGapsBlackNoButtons Not Exists:" "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons"
+		echo
+		return 0
+	fi
+
+
+	echo "mkdir -p $HOME/.themes"
+	mkdir -p "$HOME/.themes"
+
+	echo "cp -a ./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons $HOME/.themes/RGapsBlackNoButtons"
+	cp -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons" "$HOME/.themes/RGapsBlackNoButtons"
+
+}
+
+
+##
+### Tail: Theme / Rgaps / Xfwm4
 ################################################################################
 
 
