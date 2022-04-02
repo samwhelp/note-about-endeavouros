@@ -12,6 +12,7 @@ theme_asset_install () {
 	echo
 
 	theme_asset_install_gruvbox_gtk
+	theme_asset_install_gruvbox_icon
 
 
 	echo
@@ -86,6 +87,75 @@ theme_asset_install_gruvbox_gtk_install () {
 
 ##
 ### Tail: Theme / Gruvbox / Gtk
+################################################################################
+
+
+################################################################################
+### Head: Theme / Gruvbox / Icon
+##
+theme_asset_install_gruvbox_icon () {
+
+	echo
+
+	if [ -a "$HOME/.icons/Gruvbox-Dark" ]; then
+		echo
+		echo "## Icons Exists:" "$HOME/.icons/Gruvbox-Dark"
+		echo
+		return 0
+	fi
+
+
+	theme_asset_install_gruvbox_icon_download
+
+	theme_asset_install_gruvbox_icon_install
+}
+
+theme_asset_install_gruvbox_icon_download () {
+
+	if [ -a "./tmp/Icons_Gruvbox_Source" ]; then
+		echo
+		echo "## Icons Source Exists:" "./tmp/Icons_Gruvbox_Source"
+		echo
+		return 0
+	fi
+
+	echo
+	echo "mkdir -p ./tmp"
+	mkdir -p ./tmp
+
+
+	##
+	## * https://github.com/jmattheis/gruvbox-dark-icons-gtk
+	##
+	echo "git clone https://github.com/jmattheis/gruvbox-dark-icons-gtk.git ./tmp/Icons_Gruvbox_Source"
+	git clone https://github.com/jmattheis/gruvbox-dark-icons-gtk.git ./tmp/Icons_Gruvbox_Source
+
+}
+
+theme_asset_install_gruvbox_icon_install () {
+
+	if ! [ -a "./tmp/Icons_Gruvbox_Source" ]; then
+		echo
+		echo "## Icons Gruvbox Not Exists:" "./tmp/Icons_Gruvbox_Source"
+		echo
+		return 0
+	fi
+
+
+	echo "mkdir -p $HOME/.icons"
+	mkdir -p "$HOME/.icons"
+
+	echo "cp -a ./tmp/Icons_Gruvbox_Source $HOME/.icons/Gruvbox-Dark"
+	cp -a "./tmp/Icons_Gruvbox_Source" "$HOME/.icons/Gruvbox-Dark"
+
+	rm -rf "$HOME/.icons/Gruvbox-Dark/.git"
+
+	#rsync -r --exclude '.git' "./tmp/Icons_Gruvbox_Source" "$HOME/.icons/Gruvbox-Dark"
+}
+
+
+##
+### Tail: Theme / Gruvbox / Icon
 ################################################################################
 
 
