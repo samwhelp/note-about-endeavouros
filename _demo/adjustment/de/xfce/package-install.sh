@@ -42,11 +42,10 @@ main_package_find_list_raw () {
 ### Head: main
 ##
 main_package_install () {
-	echo
 	# sudo pacman -S --needed $(cat package-list.txt)
 	# sudo pacman -S --needed $(main_package_find_list_raw)
-	#sudo pacman -S --needed $(main_package_find_list)
-	#sudo pacman -Sy --needed $(main_package_find_list)
+	# sudo pacman -S --needed $(main_package_find_list)
+	sudo pacman -Sy --needed $(main_package_find_list)
 }
 
 main_package_install
