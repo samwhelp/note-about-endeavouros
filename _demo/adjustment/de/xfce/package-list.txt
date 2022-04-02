@@ -38,6 +38,8 @@ thunar
 ## Text Editor
 
 mousepad
+atom
+nodejs-lts-gallium
 
 
 ## Fcitx
@@ -61,5 +63,3 @@ capitaine-cursors
 
 
 ## Wallpaper
-
-
