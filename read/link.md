@@ -10,6 +10,7 @@ has_children: true
 ## endeavouros
 
 * [EndeavourOS](https://endeavouros.com/) ([GitHub](https://github.com/endeavouros-team))
+* EndeavourOS-Community-Editions ([GitHub](https://github.com/EndeavourOS-Community-Editions))
 
 
 ## Just the Docs
