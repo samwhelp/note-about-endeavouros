@@ -8,10 +8,14 @@ has_children: false
 # 連結
 
 
+
+
 ## EndeavourOS
 
-* [EndeavourOS](https://endeavouros.com/) ([GitHub](https://github.com/endeavouros-team))
-* EndeavourOS-Community-Editions ([GitHub](https://github.com/EndeavourOS-Community-Editions))
+| Link | GitHub |
+| ---- | ------ |
+| [EndeavourOS](https://endeavouros.com/) | [GitHub](https://github.com/endeavouros-team) |
+| EndeavourOS-Community-Editions | [GitHub](https://github.com/EndeavourOS-Community-Editions) |
 
 
 
