@@ -29,6 +29,7 @@ has_children: false
 
 ## News
 
+* [Our new ISO release is here, meet Mercury](https://endeavouros.com/news/our-new-iso-release-is-here-meet-mercury/)
 * [Plasma 6 with Wayland or X11 option and qt 6 ported Calamares, meet Gemini](https://endeavouros.com/news/plasma-6-with-wayland-or-x11-option-and-qt-6-ported-calamares-meet-gemini/)
 
 
