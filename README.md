@@ -12,18 +12,29 @@
 
 ## 主題
 
-* [EndeavourOS Adjustment](#endeavouros-adjustment)
+* [EndeavourOS Respin](#endeavouros-respin)
+* [微調腳本](#微調腳本)
 * [ISO](#iso)
 * [相關筆記](#相關筆記)
 
 
 
 
-## EndeavourOS Adjustment
+## EndeavourOS Respin
 
 | Link | GitHub |
 | ---- | ------ |
 | [EndeavourOS Kde Plasma 探索筆記](https://samwhelp.github.io/note-about-endeavouros-kde-plasma/) | [GitHub](https://github.com/samwhelp/note-about-endeavouros-kde-plasma) |
+
+
+
+
+## 微調腳本
+
+| 微調腳本 |
+| ------- |
+| [EndeavourOS Config](https://github.com/samwhelp/endeavouros-adjustment/tree/main/prototype/main) |
+| [Tool Config](https://github.com/samwhelp/endeavouros-adjustment/tree/main/prototype/main/tool-config/part) |
 
 
 
