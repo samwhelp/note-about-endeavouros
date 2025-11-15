@@ -12,22 +12,13 @@
 
 ## 主題
 
-* [EndeavourOS Respin](#endeavouros-respin)
 * [微調腳本](#微調腳本)
+* [EndeavourOS Respin](#endeavouros-respin)
 * [字型](#字型)
 * [輸入法](#輸入法)
 * [佈景主題](#佈景主題)
 * [ISO](#iso)
 * [相關筆記](#相關筆記)
-
-
-
-
-## EndeavourOS Respin
-
-| Link | GitHub |
-| ---- | ------ |
-| [EndeavourOS Kde Plasma 探索筆記](https://samwhelp.github.io/note-about-endeavouros-kde-plasma/) | [GitHub](https://github.com/samwhelp/note-about-endeavouros-kde-plasma) |
 
 
 
@@ -38,6 +29,15 @@
 | ------- |
 | [EndeavourOS Config](https://github.com/samwhelp/endeavouros-adjustment/tree/main/prototype/main) |
 | [Tool Config](https://github.com/samwhelp/endeavouros-adjustment/tree/main/prototype/main/tool-config/part) |
+
+
+
+
+## EndeavourOS Respin
+
+| Link | GitHub |
+| ---- | ------ |
+| [EndeavourOS Kde Plasma 探索筆記](https://samwhelp.github.io/note-about-endeavouros-kde-plasma/) | [GitHub](https://github.com/samwhelp/note-about-endeavouros-kde-plasma) |
 
 
 
